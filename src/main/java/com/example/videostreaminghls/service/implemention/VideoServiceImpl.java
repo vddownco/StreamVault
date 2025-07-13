@@ -139,8 +139,8 @@ public class VideoServiceImpl implements VideosService {
      */
     private void convertToHLS(Videos video) throws IOException {
         // Use the correct paths for both FFmpeg and FFprobe
-        FFmpeg ffmpeg = new FFmpeg("C:/Users/Isthifa/OneDrive/Desktop/flutterprojects/ffmpeg-master-latest-win64-gpl-shared/bin/ffmpeg.exe");
-        FFprobe ffprobe = new FFprobe("C:/Users/Isthifa/OneDrive/Desktop/flutterprojects/ffmpeg-master-latest-win64-gpl-shared/bin/ffprobe.exe");
+        FFmpeg ffmpeg = new FFmpeg("path/ffmpeg.exe");
+        FFprobe ffprobe = new FFprobe("path/ffprobe.exe");
 
         // Get video information
         FFmpegProbeResult probeResult = ffprobe.probe(video.getFilePath());
