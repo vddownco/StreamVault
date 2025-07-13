@@ -92,6 +92,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+```
 
 ## API Endpoints
 
