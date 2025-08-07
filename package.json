@@ -1,0 +1,13 @@
+{
+  "name": "streamvault-frontend",
+  "version": "1.0.0",
+  "description": "StreamVault - Video Streaming Platform Frontend",
+  "scripts": {
+    "build": "mkdir -p dist && cp -r frontend/* dist/",
+    "dev": "python3 -m http.server 3000 --directory frontend",
+    "preview": "python3 -m http.server 4173 --directory dist"
+  },
+  "keywords": ["video", "streaming", "hls"],
+  "author": "",
+  "license": "MIT"
+}
